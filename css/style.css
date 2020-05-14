@@ -1,0 +1,77 @@
+:root {
+  --color-white-1: #fff; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Baloo 2', cursive; }
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px; }
+  .main-nav-list {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-nav-list li a {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 3rem;
+      list-style: none;
+      padding: 4rem;
+      color: var(--color-white-1);
+      text-decoration: none; }
+      .main-nav-list li a:hover, .main-nav-list li a:active {
+        background-color: rgba(225, 225, 225, 0.8); }
+
+#main-textbox-homeImage {
+  margin-top: 5%;
+  height: 30rem; }
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/st-george.jpg");
+  background-size: cover;
+  height: 97rem; }
+
+/*
+.next-page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    background-color: white;
+    height: 80rem;
+    width: 80rem;
+} */
+.main-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30rem;
+  width: auto;
+  margin-top: 5%; }
+  .main-home-message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2.75rem; }
+
+.main-textbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 90rem;
+  width: auto;
+  background-color: white;
+  border: 1px solid grey; }

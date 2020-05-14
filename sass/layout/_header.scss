@@ -1,0 +1,46 @@
+.header {
+    //background-color: red;
+}
+
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //padding: 50px;
+    margin-top: 40px;
+    //background-color: red;
+
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+
+        & li a {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 3rem;
+            list-style: none;
+            padding: 4rem;
+            color: var(--color-white-1);
+            text-decoration: none;
+
+            
+
+            &:hover,
+            &:active {
+                background-color: rgba(225, 225, 225, .8);
+            }
+
+
+        }
+    }
+}
+
+#main-textbox-homeImage {
+    margin-top: 5%;
+    height: 30rem;
+}
+
+
+
+

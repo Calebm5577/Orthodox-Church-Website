@@ -1,0 +1,52 @@
+.main-image {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("/images/st-george.jpg");
+    background-size: cover;
+    height: 97rem;
+}
+
+/*
+.next-page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    background-color: white;
+    height: 80rem;
+    width: 80rem;
+} */
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background-color: red;
+    height: 30rem;
+    width: auto;
+    margin-top: 5%;
+
+
+    &-message{
+        //background-color:red;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 2.75rem;
+
+    }
+
+}
+
+.main-textbox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    
+    height: 90rem;
+    width: auto;
+    background-color: white;
+    border: 1px solid grey;
+}
