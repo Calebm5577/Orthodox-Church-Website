@@ -21,20 +21,40 @@ html {
   .main-nav-list {
     display: flex;
     flex-wrap: wrap; }
-    .main-nav-list li a {
+    .main-nav-list a {
       display: flex;
       flex-wrap: wrap;
       font-size: 3rem;
       list-style: none;
-      padding: 4rem;
+      margin-left: 4rem;
       color: var(--color-white-1);
       text-decoration: none; }
-      .main-nav-list li a:hover, .main-nav-list li a:active {
+      .main-nav-list a:hover, .main-nav-list a:active {
         background-color: rgba(225, 225, 225, 0.8); }
 
-#main-textbox-homeImage {
-  margin-top: 5%;
-  height: 30rem; }
+label {
+  color: white;
+  font-size: 4rem;
+  line-height: 70px;
+  display: none; }
+
+#toggle {
+  display: none; }
+
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer; }
+  .main-nav-list {
+    text-align: center;
+    width: 100%;
+    display: none; }
+  .main-nav-list a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0; }
+  #toggle:checked + .main-nav-list {
+    display: block; } }
 
 .main-image {
   display: flex;
@@ -71,7 +91,15 @@ html {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  text-align: center;
   height: 90rem;
   width: auto;
   background-color: white;
   border: 1px solid grey; }
+  .main-textbox-welcome {
+    margin-top: 5%;
+    font-size: 5rem;
+    height: 6rem;
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid #d4bb2c; }

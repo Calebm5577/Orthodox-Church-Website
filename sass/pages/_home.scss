@@ -43,10 +43,21 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    text-align: center;
 
     
     height: 90rem;
     width: auto;
     background-color: white;
     border: 1px solid grey;
+
+    &-welcome {
+        margin-top: 5%;
+        font-size: 5rem;
+        height: 6rem;
+        display: flex;
+        text-align: center;
+        border-bottom: 2px solid rgb(212, 187, 44);
+
+    }
 }
