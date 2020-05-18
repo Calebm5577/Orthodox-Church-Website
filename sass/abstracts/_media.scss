@@ -1,0 +1,53 @@
+
+
+@media only screen and (max-width: 500px) {
+
+    //Drop down hamburger menu
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav-list{
+        text-align: center;
+        width: 100%;
+        display: none;
+        
+    }
+    .main-nav-list a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+
+    }
+    #toggle:checked +.main-nav-list {
+        display: block;
+    }
+//////////////////////////////////REVIEW//////////////////////////////////////////////////////////
+    //Background image change
+
+    .main-image {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("/images/st-george-small.jpg");
+    }
+
+    //St George Serbian Orthodox church size change
+
+    .main-textbox {
+        margin-top: 0rem;
+        height: 25rem;
+
+    }
+
+    .main-home {
+        margin-top: 0;
+    
+    
+        &-message{
+            font-size: 1.75;
+    
+        }
+    
+        }
+
+
+}

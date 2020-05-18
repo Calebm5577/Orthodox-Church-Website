@@ -1,0 +1,21 @@
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background-color: red;
+    height: 30rem;
+    width: auto;
+    margin-top: 5%;
+
+
+    &-message{
+        //background-color:red;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 2.75rem;
+
+    }
+
+}
