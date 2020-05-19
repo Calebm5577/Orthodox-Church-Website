@@ -157,6 +157,27 @@
                text-align: center;
                position: relative;
 
+               //Saints title when clicked on
+
+               &-description {
+
+                    &-text {
+
+                    }
+
+                //Saints description when clicked on
+
+
+                &-long {
+
+                    &-text {
+
+                    }
+                }
+               }
+
+               //images of saints
+
                &-saints {
                     display: flex;
                     justify-content: center;
