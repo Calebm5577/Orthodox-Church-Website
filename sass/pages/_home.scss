@@ -28,13 +28,20 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    font-size: 1.5rem;
     //box-shadow: 0 1.5rem 4rem rgba(black, .4);
 
     
     height: 90rem;
-    width: auto;
+    width: 90rem;
+    //width: auto;
     background-color: white;
     border: 1px solid grey;
+
+
+    &-long-textbox {
+        height:auto!important;
+    }
 
     &-endtext {
         color:white;
@@ -43,12 +50,15 @@
         &-menu {
             padding: 3rem;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             font-family: 'Times New Roman', Times, serif;
+
+            
 
             &-site-menu-official {
                 & a {
                     display: flex;
+                    justify-content: center;
                     text-decoration: none;
                     color: white;
                     margin-top: .5rem;
@@ -78,7 +88,16 @@
 
 
             &-news-letter {
+                
+                &-button {
+                    font-size: 2.5rem;
+                    background-color: orange!important;
+                    color: white;
+                }
 
+                &-button:hover {
+                    background-color:rgb(216, 156, 45)!important;
+                }
             }
 
             &-contact {
@@ -138,17 +157,27 @@
             //display: flex;
             //justify-content: center;
             align-self: center;
-            height: 40rem;
-            width: 30rem;
+            height: 30rem;
+            width: 20rem;
             box-shadow: 0 1.5rem 4rem rgba(black, .4);
 
         }
 
+        &-image2 {
+            margin-top: 10%;
+            align-self: center;
+            height: 40rem;
+            width: 40rem;
+            box-shadow: 0 1.5rem 4rem rgba(black, .4);
+        }
+
         &-message {
-            margin-top: 3%;
+            margin-top: 7.5%;
+            margin-left: 2%;
             display: flex;
             text-align: left;
             justify-content: center;
+            font-size: 3.5rem;
         }
     }
            &-about {
@@ -169,7 +198,8 @@
 
 
                 &-long {
-
+                    position: relative;
+                    margin-top: 45%;
                     &-text {
 
                     }
@@ -238,6 +268,7 @@
                         &-6:hover,
                         &-7:hover {
                             z-index: 10;
+
                         }
 
                         &-1:active,
@@ -254,6 +285,65 @@
                   
                }
            } 
+
+           &-parish {
+
+               &-history {
+                   
+                    &-text {
+                        font-size: 3.5rem;
+                        text-align: left;
+                        margin-left: 1%;
+                    }
+               }
+
+               &-clergy {
+                   display: flex;
+
+                &-img {
+                    display: flex;
+                    height: 40rem;
+                    margin-left: 10%;
+                    box-shadow: 0 1.5rem 4rem rgba(black, .4);
+
+                }
+
+                &-text {
+                    //display: flex;
+                    align-self: center;
+                    text-align: left;
+                    margin-left: 5%;
+                    font-size: 2.5rem;
+
+                    &-title {
+                        font-size: 3.5rem;
+                    }
+
+                    &-long {
+                        
+                    }
+                }
+
+               }
+           }
+
+           &-schedule {
+                display: flex;
+                justify-content: center;
+
+            &-time {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-activity {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                position: relative;
+                left: 10%;
+            }
+           }
     }
 
 
@@ -263,6 +353,33 @@
     background-color: #0C3C59;
     height: 55%;
 }
+
+[class*="-margin-bottom"] {
+    margin-bottom: 10%;
+}
+ 
+[class*="-paragraph-format"] {
+        font-size: 3.5rem;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+[class*="-subscribe"] {
+    font-size: 2.5rem;
+}
+
+[class*="day"] {
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+
+
+
+
+
+
+
 
 .inbetween {
     margin-top: 12%;

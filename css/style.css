@@ -126,20 +126,24 @@ label {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  font-size: 1.5rem;
   height: 90rem;
-  width: auto;
+  width: 90rem;
   background-color: white;
   border: 1px solid grey; }
+  .main-textbox-long-textbox {
+    height: auto !important; }
   .main-textbox-endtext {
     color: white;
     font-size: 2rem; }
     .main-textbox-endtext-menu {
       padding: 3rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       font-family: 'Times New Roman', Times, serif; }
       .main-textbox-endtext-menu-site-menu-official a {
         display: flex;
+        justify-content: center;
         text-decoration: none;
         color: white;
         margin-top: .5rem; }
@@ -152,6 +156,12 @@ label {
       justify-content: space-around;
       margin-top: 12.5%;
       font-family: 'Times New Roman', Times, serif; }
+      .main-textbox-endtext-menu2-news-letter-button {
+        font-size: 2.5rem;
+        background-color: orange !important;
+        color: white; }
+      .main-textbox-endtext-menu2-news-letter-button:hover {
+        background-color: #d89c2d !important; }
   .main-textbox-welcome {
     padding: 2.5rem 0rem 7rem 0rem;
     margin-bottom: 10rem;
@@ -182,19 +192,30 @@ label {
     text-align: center; }
     .main-textbox-patron-image {
       align-self: center;
+      height: 30rem;
+      width: 20rem;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    .main-textbox-patron-image2 {
+      margin-top: 10%;
+      align-self: center;
       height: 40rem;
-      width: 30rem;
+      width: 40rem;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
     .main-textbox-patron-message {
-      margin-top: 3%;
+      margin-top: 7.5%;
+      margin-left: 2%;
       display: flex;
       text-align: left;
-      justify-content: center; }
+      justify-content: center;
+      font-size: 3.5rem; }
   .main-textbox-about {
     display: flex;
     justify-content: center;
     text-align: center;
     position: relative; }
+    .main-textbox-about-description-long {
+      position: relative;
+      margin-top: 45%; }
     .main-textbox-about-saints {
       display: flex;
       justify-content: center;
@@ -233,10 +254,55 @@ label {
           z-index: 10; }
         .main-textbox-about-saints-photos-1:active, .main-textbox-about-saints-photos-2:active, .main-textbox-about-saints-photos-3:active, .main-textbox-about-saints-photos-4:active, .main-textbox-about-saints-photos-5:active, .main-textbox-about-saints-photos-6:active, .main-textbox-about-saints-photos-7:active {
           z-index: 10; }
+  .main-textbox-parish-history-text {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 1%; }
+  .main-textbox-parish-clergy {
+    display: flex; }
+    .main-textbox-parish-clergy-img {
+      display: flex;
+      height: 40rem;
+      margin-left: 10%;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    .main-textbox-parish-clergy-text {
+      align-self: center;
+      text-align: left;
+      margin-left: 5%;
+      font-size: 2.5rem; }
+      .main-textbox-parish-clergy-text-title {
+        font-size: 3.5rem; }
+  .main-textbox-schedule {
+    display: flex;
+    justify-content: center; }
+    .main-textbox-schedule-time {
+      display: flex;
+      flex-direction: column; }
+    .main-textbox-schedule-activity {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      position: relative;
+      left: 10%; }
 
 [class*="-end"] {
   background-color: #0C3C59;
   height: 55%; }
+
+[class*="-margin-bottom"] {
+  margin-bottom: 10%; }
+
+[class*="-paragraph-format"] {
+  font-size: 3.5rem;
+  text-align: left;
+  margin-left: 1%; }
+
+[class*="-subscribe"] {
+  font-size: 2.5rem; }
+
+[class*="day"] {
+  margin-bottom: 2.5%;
+  margin-top: 2.5%; }
 
 .inbetween {
   margin-top: 12%;
