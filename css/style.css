@@ -103,7 +103,7 @@ label {
   .main-title-message {
     flex-wrap: wrap; }
   [class*="-end"] {
-    width: 14px; } }
+    width: 414px; } }
 
 .patron-saint-image {
   position: relative;
@@ -113,7 +113,7 @@ label {
 .main-image {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/st-george.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/st-george.JPG");
   height: 200px;
   background-size: cover;
   height: 97rem; }
