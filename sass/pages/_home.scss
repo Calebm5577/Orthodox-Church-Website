@@ -145,6 +145,17 @@
 
             }
 
+    &-about {
+
+        &-img {
+            height: 70rem;
+            width: 50rem;
+            box-shadow: 0 1.5rem 4rem rgba(black, .4);
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }
+
 
     &-patron {
         display: flex;
@@ -180,11 +191,25 @@
             font-size: 3.5rem;
         }
     }
-           &-about {
+           &-ourfaith {
                display: flex;
                justify-content: center;
                text-align: center;
-               position: relative;
+               //position: relative;
+
+               &-last-img-container {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-top: 5%;
+                margin-bottom: 5%;
+
+                    &-img{
+                        height: 45rem;
+                        width: 45rem;
+                        box-shadow: 0 1.5rem 4rem rgba(black, .4);
+                    }
+               }
 
                //Saints title when clicked on
 
@@ -330,6 +355,7 @@
            &-schedule {
                 display: flex;
                 justify-content: center;
+                font-size: 2rem;
 
             &-time {
                 display: flex;
@@ -341,7 +367,7 @@
                 flex-direction: column;
                 text-align: left;
                 position: relative;
-                left: 10%;
+                left: 12.5%;
             }
            }
     }
@@ -357,6 +383,15 @@
 [class*="-margin-bottom"] {
     margin-bottom: 10%;
 }
+
+[class*="-margin-top"] {
+    margin-top: 5%;
+}
+
+[class*="center"] {
+    display: flex;
+    justify-content: center;
+}
  
 [class*="-paragraph-format"] {
         font-size: 3.5rem;
@@ -371,6 +406,13 @@
 [class*="day"] {
     margin-bottom: 2.5%;
     margin-top: 2.5%;
+    font-size: 3rem;
+}
+
+[class*="large-image"] {
+    height: 60rem;
+    width: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba(black, .4);
 }
 
 
@@ -412,17 +454,18 @@
 /////////////////////Review////////////////////////////////
 
 .slide-container {
-    width: 1280px; /*IMAGE SIZE */
-    height: 853px;
+    width: 720px; /*IMAGE SIZE */
+    height: 427px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba(black, .4);
 }
 
 .image-container {
-    width: 3840px; /*All images combined width*/
-    height: 853px; /* same as height of other images*/
+    width: 2160px; /*All images combined width*/
+    height: 427px; /* same as height of other images*/
     position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
@@ -452,12 +495,15 @@
 
 #slider-image-1:target ~ .image-container {
     left: 0px;
+    top: none;
 }
 
 #slider-image-2:target ~ .image-container {
-    left: -1280px;
+    left: -720px;
+    top: none;
 }
 
 #slider-image-3:target ~ .image-container {
-    left: -2560px;
+    left: -1440px;
+    top: none;
 }

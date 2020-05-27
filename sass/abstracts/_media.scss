@@ -51,3 +51,30 @@
 
 
 }
+
+//Home page IOS Adjustments
+@media only screen and (max-width: 500px) {
+    html {
+        width: 414px;
+    }
+    
+    .main-textbox {
+
+    }
+
+    .main-title-message {
+        flex-wrap: wrap;
+    }
+
+    .inbetween {
+        
+
+        .inbetween-text {
+            
+        }
+    }
+
+    [class*="-end"] {
+        width: 414px;
+    }
+}

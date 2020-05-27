@@ -97,6 +97,14 @@ label {
     .main-home-message {
       font-size: 1.75; } }
 
+@media only screen and (max-width: 500px) {
+  html {
+    width: 414px; }
+  .main-title-message {
+    flex-wrap: wrap; }
+  [class*="-end"] {
+    width: 14px; } }
+
 .patron-saint-image {
   position: relative;
   height: 5rem;
@@ -186,6 +194,12 @@ label {
     .main-textbox-home-address {
       margin-top: 7.5rem;
       font-size: 2.5rem; }
+  .main-textbox-about-img {
+    height: 70rem;
+    width: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    margin-top: 5%;
+    margin-bottom: 5%; }
   .main-textbox-patron {
     display: flex;
     flex-direction: column;
@@ -208,51 +222,60 @@ label {
       text-align: left;
       justify-content: center;
       font-size: 3.5rem; }
-  .main-textbox-about {
+  .main-textbox-ourfaith {
     display: flex;
     justify-content: center;
-    text-align: center;
-    position: relative; }
-    .main-textbox-about-description-long {
+    text-align: center; }
+    .main-textbox-ourfaith-last-img-container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 5%; }
+      .main-textbox-ourfaith-last-img-container-img {
+        height: 45rem;
+        width: 45rem;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    .main-textbox-ourfaith-description-long {
       position: relative;
       margin-top: 45%; }
-    .main-textbox-about-saints {
+    .main-textbox-ourfaith-saints {
       display: flex;
       justify-content: center;
       position: relative;
       align-self: center;
       margin-top: 5%; }
-      .main-textbox-about-saints-photos {
+      .main-textbox-ourfaith-saints-photos {
         display: flex;
         justify-content: center;
         height: 30rem;
         width: 20rem;
         position: absolute;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
-        .main-textbox-about-saints-photos-1 {
+        .main-textbox-ourfaith-saints-photos-1 {
           z-index: 1;
           left: 0; }
-        .main-textbox-about-saints-photos-2 {
+        .main-textbox-ourfaith-saints-photos-2 {
           z-index: 2;
           left: -3rem; }
-        .main-textbox-about-saints-photos-3 {
+        .main-textbox-ourfaith-saints-photos-3 {
           z-index: 3;
           left: -6rem; }
-        .main-textbox-about-saints-photos-4 {
+        .main-textbox-ourfaith-saints-photos-4 {
           z-index: 4;
           left: -9rem; }
-        .main-textbox-about-saints-photos-5 {
+        .main-textbox-ourfaith-saints-photos-5 {
           z-index: 5;
           left: -12rem; }
-        .main-textbox-about-saints-photos-6 {
+        .main-textbox-ourfaith-saints-photos-6 {
           z-index: 6;
           left: -15rem; }
-        .main-textbox-about-saints-photos-7 {
+        .main-textbox-ourfaith-saints-photos-7 {
           z-index: 7;
           left: -18rem; }
-        .main-textbox-about-saints-photos-1:hover, .main-textbox-about-saints-photos-2:hover, .main-textbox-about-saints-photos-3:hover, .main-textbox-about-saints-photos-4:hover, .main-textbox-about-saints-photos-5:hover, .main-textbox-about-saints-photos-6:hover, .main-textbox-about-saints-photos-7:hover {
+        .main-textbox-ourfaith-saints-photos-1:hover, .main-textbox-ourfaith-saints-photos-2:hover, .main-textbox-ourfaith-saints-photos-3:hover, .main-textbox-ourfaith-saints-photos-4:hover, .main-textbox-ourfaith-saints-photos-5:hover, .main-textbox-ourfaith-saints-photos-6:hover, .main-textbox-ourfaith-saints-photos-7:hover {
           z-index: 10; }
-        .main-textbox-about-saints-photos-1:active, .main-textbox-about-saints-photos-2:active, .main-textbox-about-saints-photos-3:active, .main-textbox-about-saints-photos-4:active, .main-textbox-about-saints-photos-5:active, .main-textbox-about-saints-photos-6:active, .main-textbox-about-saints-photos-7:active {
+        .main-textbox-ourfaith-saints-photos-1:active, .main-textbox-ourfaith-saints-photos-2:active, .main-textbox-ourfaith-saints-photos-3:active, .main-textbox-ourfaith-saints-photos-4:active, .main-textbox-ourfaith-saints-photos-5:active, .main-textbox-ourfaith-saints-photos-6:active, .main-textbox-ourfaith-saints-photos-7:active {
           z-index: 10; }
   .main-textbox-parish-history-text {
     font-size: 3.5rem;
@@ -274,7 +297,8 @@ label {
         font-size: 3.5rem; }
   .main-textbox-schedule {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 2rem; }
     .main-textbox-schedule-time {
       display: flex;
       flex-direction: column; }
@@ -283,7 +307,7 @@ label {
       flex-direction: column;
       text-align: left;
       position: relative;
-      left: 10%; }
+      left: 12.5%; }
 
 [class*="-end"] {
   background-color: #0C3C59;
@@ -291,6 +315,13 @@ label {
 
 [class*="-margin-bottom"] {
   margin-bottom: 10%; }
+
+[class*="-margin-top"] {
+  margin-top: 5%; }
+
+[class*="center"] {
+  display: flex;
+  justify-content: center; }
 
 [class*="-paragraph-format"] {
   font-size: 3.5rem;
@@ -302,7 +333,13 @@ label {
 
 [class*="day"] {
   margin-bottom: 2.5%;
-  margin-top: 2.5%; }
+  margin-top: 2.5%;
+  font-size: 3rem; }
+
+[class*="large-image"] {
+  height: 60rem;
+  width: 40rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .inbetween {
   margin-top: 12%;
@@ -321,18 +358,19 @@ label {
   font-family: 'Times New Roman', Times, serif; }
 
 .slide-container {
-  width: 1280px;
+  width: 720px;
   /*IMAGE SIZE */
-  height: 853px;
+  height: 427px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .image-container {
-  width: 3840px;
+  width: 2160px;
   /*All images combined width*/
-  height: 853px;
+  height: 427px;
   /* same as height of other images*/
   position: relative;
   transition: left 2s;
@@ -357,10 +395,13 @@ label {
   background-color: white; }
 
 #slider-image-1:target ~ .image-container {
-  left: 0px; }
+  left: 0px;
+  top: none; }
 
 #slider-image-2:target ~ .image-container {
-  left: -1280px; }
+  left: -720px;
+  top: none; }
 
 #slider-image-3:target ~ .image-container {
-  left: -2560px; }
+  left: -1440px;
+  top: none; }
