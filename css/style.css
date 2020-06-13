@@ -73,7 +73,7 @@ label {
     color: white;
     font-size: 2.75rem; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   label {
     display: block;
     cursor: pointer; }
@@ -97,23 +97,253 @@ label {
     .main-home-message {
       font-size: 1.75; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 375px) {
   html {
-    width: 414px; }
+    width: 375px;
+    overflow-x: hidden; }
+  .main-texbox {
+    width: 375px; }
+  [class*="-paragraph-format"] {
+    width: 360px;
+    position: relative;
+    left: 32%; }
+  .inbetween {
+    width: 375px;
+    position: relative;
+    left: 29%; }
   .main-title-message {
-    flex-wrap: wrap; }
+    font-size: 2.2rem; }
   [class*="-end"] {
-    width: 414px; } }
+    width: 375px; }
+  [class*="-subscribe"] {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2.5rem;
+    width: 300px;
+    left: 11%; }
+  .main-textbox-endtext {
+    width: 375px; }
+  .main-textbox-endtext-menu-site-menu {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25%; }
+  .main-textbox-endtext-menu-site-menu-official {
+    width: 375px; }
+  .main-textbox-endtext-menu2-news-letter-button {
+    position: relative;
+    right: 50%;
+    font-size: 2.5rem;
+    top: 110%; }
+  .main-textbox-endtext-menu2 {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    right: -50%; }
+  .main-textbox-endtext-menu2-news-letter {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 12%; }
+  .main-textbox-endtext-menu-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 13%;
+    top: 70%;
+    background-color: transparent; }
+  #contact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent; }
+  .-paragraph-format {
+    width: 360px;
+    margin-left: 0;
+    padding-left: 0;
+    left: 29%; }
+  .main-textbox-schedule-time {
+    margin-right: 0; }
+  .main-textbox-patron-message {
+    width: 360px;
+    position: relative;
+    left: 270px;
+    top: -75px; }
+  .main-textbox-patron-image {
+    position: relative;
+    top: -50px; }
+  .main-textbox-parish-history {
+    width: 370px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; }
+    .main-textbox-parish-history-text {
+      width: 370px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      left: 75%; }
+  .main-textbox-parish-clergy {
+    display: flex;
+    flex-direction: column; }
+  .main-textbox-parish-clergy-img {
+    width: 280px;
+    position: relative;
+    left: 24%;
+    margin-bottom: 10%; }
+  .main-textbox-parish-clergy-text {
+    position: relative;
+    margin-left: 0;
+    left: -2%;
+    width: 360px; } }
 
 .patron-saint-image {
   position: relative;
   height: 5rem;
   width: 5rem; }
 
+@media only screen and (max-width: 800px) {
+  label {
+    display: block;
+    cursor: pointer; }
+  .main-nav-list {
+    text-align: center;
+    width: 100%;
+    display: none; }
+  .main-nav-list a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0; }
+  #toggle:checked + .main-nav-list {
+    display: block; }
+  .main-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/st-george-small.jpg"); }
+  .main-textbox {
+    margin-top: 0rem;
+    height: 25rem; }
+  .main-home {
+    margin-top: 0; }
+    .main-home-message {
+      font-size: 1.75; } }
+
+@media only screen and (max-width: 375px) {
+  html {
+    width: 375px;
+    overflow-x: hidden; }
+  .main-texbox {
+    width: 375px; }
+  [class*="-paragraph-format"] {
+    width: 360px;
+    position: relative;
+    left: 32%; }
+  .inbetween {
+    width: 375px;
+    position: relative;
+    left: 29%; }
+  .main-title-message {
+    font-size: 2.2rem; }
+  [class*="-end"] {
+    width: 375px; }
+  [class*="-subscribe"] {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2.5rem;
+    width: 300px;
+    left: 11%; }
+  .main-textbox-endtext {
+    width: 375px; }
+  .main-textbox-endtext-menu-site-menu {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25%; }
+  .main-textbox-endtext-menu-site-menu-official {
+    width: 375px; }
+  .main-textbox-endtext-menu2-news-letter-button {
+    position: relative;
+    right: 50%;
+    font-size: 2.5rem;
+    top: 110%; }
+  .main-textbox-endtext-menu2 {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    right: -50%; }
+  .main-textbox-endtext-menu2-news-letter {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 12%; }
+  .main-textbox-endtext-menu-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 13%;
+    top: 70%;
+    background-color: transparent; }
+  #contact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: transparent; }
+  .-paragraph-format {
+    width: 360px;
+    margin-left: 0;
+    padding-left: 0;
+    left: 29%; }
+  .main-textbox-schedule-time {
+    margin-right: 0; }
+  .main-textbox-patron-message {
+    width: 360px;
+    position: relative;
+    left: 270px;
+    top: -75px; }
+  .main-textbox-patron-image {
+    position: relative;
+    top: -50px; }
+  .main-textbox-parish-history {
+    width: 370px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; }
+    .main-textbox-parish-history-text {
+      width: 370px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      left: 75%; }
+  .main-textbox-parish-clergy {
+    display: flex;
+    flex-direction: column; }
+  .main-textbox-parish-clergy-img {
+    width: 280px;
+    position: relative;
+    left: 24%;
+    margin-bottom: 10%; }
+  .main-textbox-parish-clergy-text {
+    position: relative;
+    margin-left: 0;
+    left: -2%;
+    width: 360px; } }
+
 .main-image {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/st-george.JPG");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/st-george.JPG");
   height: 200px;
   background-size: cover;
   height: 97rem; }
@@ -280,7 +510,8 @@ label {
   .main-textbox-parish-history-text {
     font-size: 3.5rem;
     text-align: left;
-    margin-left: 1%; }
+    margin-left: 1%;
+    padding-bottom: 12%; }
   .main-textbox-parish-clergy {
     display: flex; }
     .main-textbox-parish-clergy-img {

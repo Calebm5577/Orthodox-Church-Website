@@ -1,7 +1,9 @@
+@import "../abstracts/media";
+
 .main-image {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("images/st-george.JPG");
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/images/st-george.JPG");
     //
     height: 200px;
     //
@@ -319,6 +321,7 @@
                         font-size: 3.5rem;
                         text-align: left;
                         margin-left: 1%;
+                        padding-bottom: 12%;
                     }
                }
 

@@ -1,6 +1,6 @@
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 
     //Drop down hamburger menu
 
@@ -53,28 +53,192 @@
 }
 
 //Home page IOS Adjustments
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 375px) {
     html {
-        width: 414px;
-    }
-    
-    .main-textbox {
-
+        width: 375px;
+        overflow-x: hidden;
     }
 
-    .main-title-message {
-        flex-wrap: wrap;
+    .main-texbox {
+        width: 375px;
+    }
+
+    [class*="-paragraph-format"] {
+        width: 360px;
+        position: relative;
+        left: 32%;
     }
 
     .inbetween {
-        
+        width: 375px;
+        position: relative;
+        left: 29%;
 
-        .inbetween-text {
-            
+        &-text {
+            //font-size: 1rem;
         }
     }
 
-    [class*="-end"] {
-        width: 414px;
+    .main-title-message {
+        font-size: 2.2rem;
     }
+
+
+    [class*="-end"] {
+        width: 375px;
+
+    }
+
+    
+    //Subscribe input bar
+    [class*="-subscribe"] {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-size: 2.5rem;
+        width: 300px;
+        left: 11%;
+    }
+
+    .main-textbox-endtext {
+        width: 375px;
+
+    }
+
+    .main-textbox-endtext-menu-site-menu {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 25%;
+    }
+
+    .main-textbox-endtext-menu-site-menu-official {
+        width: 375px;
+    }
+
+
+    //Subscribe Button
+    .main-textbox-endtext-menu2-news-letter-button {
+        position: relative;
+        right: 50%;
+        font-size: 2.5rem;
+        top: 110%;
+    }
+
+    .main-textbox-endtext-menu2 {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        right: -50%;
+
+    }
+
+    .main-textbox-endtext-menu2-news-letter {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 12%;
+
+
+    }
+
+    .main-textbox-endtext-menu-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 13%;
+        top: 70%;
+        background-color: transparent;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-color: transparent;
+        //top: 50%;
+    }
+
+//About page
+
+    .-paragraph-format {
+        width: 360px;
+        margin-left: 0;
+        padding-left: 0;
+        left: 29%;
+    }
+
+
+//Our faith
+
+
+//Schedule
+
+    .main-textbox-schedule-time{
+        margin-right: 0;
+    }
+
+    //Patron Saint
+    .main-textbox-patron-message{
+        width: 360px;
+        position: relative;
+        left: 270px;
+        top: -75px;
+    }
+
+    .main-textbox-patron-image {
+        position: relative;
+        top: -50px;
+    }
+
+    //Parish Hall
+
+    .main-textbox-parish-history {
+        width: 370px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+
+
+        &-text {
+            width: 370px;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 75%;
+        }
+    }
+
+        //Father image
+        .main-textbox-parish-clergy {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .main-textbox-parish-clergy-img {
+            width: 280px;
+            position: relative;
+            left: 24%;
+            margin-bottom: 10%;
+
+        }
+
+        .main-textbox-parish-clergy-text {
+            position: relative;
+            margin-left: 0;
+            left: -2%;
+            width: 360px;
+
+        }
+
+    
+
+
 }
+
